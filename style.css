@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-family: inter;
+    text-transform: capitalize;
+}
+
+p{
+    font-size: 14px;
+}
+
+.profile__card{
+    background-color: hsl(0, 0%, 12%);
+    width: 360px;
+    padding: 3.5rem 2.5rem 2.5rem 2.5rem;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 26px;
+}
+
+.profile__card .overview{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 34px;
+}
+
+.profile__card .overview img{
+    width: 90px;
+    border-radius: 45px;
+    justify-self: center;
+}
+
+.profile__card .overview div{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.profile__card .overview .name{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.profile__card .overview .location{
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.profile__card .links{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.profile__card .links a{
+    background-color: hsl(0, 0%, 20%);
+    color: inherit;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    transition: background-color 0.3s ,color 0.3s;
+}
+
+.profile__card .links a:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+}
+
+@media (max-width:375px) {
+    .profile__card{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
